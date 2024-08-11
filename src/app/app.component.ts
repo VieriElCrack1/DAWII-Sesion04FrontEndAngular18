@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +9,15 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'DAWII-Sesion04FrontEndInicio2-Angular18';
+  //title = 'DAWII-Sesion04FrontEndInicio2-Angular18';
+
+  constructor(private router : Router) {}
+
+  irDeporte() {
+    this.router.navigateByUrl("/deporte");
+  }
+
+  irModalidad() {
+    this.router.navigateByUrl("/modalidad");
+  }
 }
