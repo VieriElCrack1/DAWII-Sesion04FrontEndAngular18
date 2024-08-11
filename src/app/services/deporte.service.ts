@@ -8,7 +8,8 @@ import { Deporte } from '../model/deporte';
 })
 export class DeporteService {
 
-  private url = "https://localhost:8090/url/util";
+  private url = "http://localhost:8090/url/util";
+  
 
   constructor(private http : HttpClient) { }
 
